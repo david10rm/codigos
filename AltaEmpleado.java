@@ -405,29 +405,39 @@ public class AltaEmpleado extends javax.swing.JFrame {
         // TODO add your handling code he
         System.out.println("Nuevo empleado!!!");
         this.limpiarFormulario();
-        Empleado emp= new Empleado():
-        emp.setNombre( this.jText.Field1.getText());
-        emp.setApPaterno( this.jText.Field2.getText());
-        emp.setApMaterno( jText.Field3.getText());
-        emp.setEdad(Integer.parseInt(jtField4.getText()) );//convierte a int
-        emp.setCurp( jText.Field5.getText());
-        emp.getDomicilio().setCalle(this.jText.Field6.getText());
+        Empleado emp= new Empleado();
+        emp.setNombre( this.jTextField1.getText());
+        emp.setApPaterno( this.jTextField2.getText());
+        emp.setApMaterno( jTextField3.getText());
+        emp.setEdad( Integer.parseInt( jTextField4.getText()) );//convierte a int
+        emp.setCurp( jTextField5.getText());
+        emp.getDomicilio().setCalle(this.jTextField6.getText());
+        emp.getDomicilio().setNumero(this.jTextField7.getText());
+        emp.getDomicilio().setColonia(this.jTextField8.getText());
+        emp.getDomicilio().setDelegacion(this.jTextField9.getText());
+        emp.getDomicilio().setEstado(this.jTextField10.getText());
+        emp.setNumeroEmpleado(Integer.parseInt(this.jTextField11.getText()));
+        emp.setDepartamento( this.jTextField12.getText());
+        emp.setSueldo( Float.parseFloat( this.jTextField13.getText()) );
+        emp.setHorasExtra( Integer.parseInt( this.jTextField14.getText()) );
+        int confirmar = JOptionPane.showConfirmDialog(this, "¿Deseas guardar estos datos?");
+        
     }//GEN-LAST:event_jButton5MouseClicked
     private void limpiarFormulario(){
-        this.jtTextField1.setText("");
-        this.jtTextField2.setText("");
-        this.jtTextField3.setText("");
-        this.jtTextField4.setText("");
-        this.jtTextField5.setText("");
-        this.jtTextField6.setText("");
-        this.jtTextField7.setText("");
-        this.jtTextField8.setText("");
-        this.jtTextField9.setText("");
-        this.jtTextField10.setColumns(10);
-        this.jtTextField11.setText("");
-        this.jtTextField12.setText("");
-        this.jtTextField13.setText("");
-        this.jtTextField14.setText("");
+        this.jTextField1.setText("");
+        this.jTextField2.setText("");
+        this.jTextField3.setText("");
+        this.jTextField4.setText("");
+        this.jTextField5.setText("");
+        this.jTextField6.setText("");
+        this.jTextField7.setText("");
+        this.jTextField8.setText("");
+        this.jTextField9.setText("");
+        this.jTextField10.setColumns(10);
+        this.jTextField11.setText("");
+        this.jTextField12.setText("");
+        this.jTextField13.setText("");
+        this.jTextField14.setText("");
         
     }
     /**
